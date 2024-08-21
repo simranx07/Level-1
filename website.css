@@ -12,7 +12,8 @@ body{
     width: auto;
     height: 70px;
     position: sticky;
-    top: 0;    
+    top: 0;   
+    z-index: 3; 
 }
 
 .header p:first-child{
@@ -57,7 +58,90 @@ body{
 }
 
 .main-content .welcome{
-    background-image: images\pic-2.jpg;
+    background-image: url(images/image1.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
 }
+
+.main-content .welcome .heading{
+    margin-top: -100px;
+}
+
+.main-content .welcome .text{
+    text-align: center;
+    margin: 0 90px 0;
+    padding: 20px;
+}
+
+.main-content .welcome .get-started{
+    padding: 10px;
+    width: 150px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(244, 248, 248);
+    color: black;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/*-----about secton code-----*/
+
+.about{ 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: darkblue;
+    background-color: #ceeaf2;
+    height: 900px;
+}
+
+.about .bg{
+    width: 500px;
+    height: 600px;
+    position: relative;
+    top: 10%;
+    left: 20%;
+}
+
+.about .float{
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    width: 400px;
+    height: 400px;
+    padding: 40px;
+    text-align: center;
+    background-color: #ceeaf2;
+
+}
+
+.about .float .heading2{
+    margin-top: 0px;
+    font-size: 3rem;
+}
+.about .float .text1{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.about .float .pricing{
+    padding: 20px;
+    width: 200px;
+    border: none;
+    border-radius: 50px;
+    background-color: darkblue;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+}
+
 
 
