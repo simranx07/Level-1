@@ -1,0 +1,40 @@
+<DOCTYPE! html>
+<html lang="en">
+   <head>
+      <title>Border Effects</title>
+      <style>
+         .border{display:flex; align-items: center; justify-content: center; position: absolute; top: 10%; left: 10%; font-size: 2em; width: 250px; height: 250px; background: black; color: white; border-radius: 10px; animation-name: effects; animation-duration; 3s; animation-iteration-count: infinite; }
+
+
+         .border::before{content: ''; position: absolute; width: 260px; height: 260px; background: linear-gradient(red, pink, blue, yellow); z-index: -1; border-radius: 10px; animation-name: effects; animation-duration; 3s; animation-iteration-count: infinite;}
+
+
+         .btn{display: flex; align-items: center; position: absolute; top: 50%; left: 30%; width: 100px; height: 50px;}
+.hoverr{display: none; position: absolute; top: 10%; left: 10%; z-ndex: 1;}
+
+.heading{width: 500px; height: 50px; background: black; color: white; font-size: 15px; }
+
+.paragraph{display: flex; background: grey; color: white; width: 500px; height: 300px; align-items: center; justify-content: center;  }
+
+.drop-down:hover .hoverr{display: flex;  flex-direction: column;}
+.btn:hover{color: red;}
+      </style>
+   </head>
+   <body>
+      <div class="border">Border Effect</div>
+<div class="drop-down">
+<button class="btn">Hover me</button>
+
+<div class="hoverr">
+   <div class="heading">
+      <h1>Next Episode</h1>
+   </div>
+   <div class="paragraph">
+      <img scr="https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg" alt="broken image" />
+      <p> this is a paragraph for image and next episode asdjf  akdjf  aksldfj kjsadf j klasdfj </p>
+   </div>
+</div>
+
+</div>
+   </body>
+</html>
