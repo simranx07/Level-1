@@ -1,0 +1,63 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ceeaf2;
+    width: auto;
+    height: 70px;
+    position: sticky;
+    top: 0;    
+}
+
+.header p:first-child{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.header .nav-bar-list .list-items{
+    display: inline-block;  
+    margin: 5px;
+    padding: 5px;  
+}
+
+.header .nav-bar-list .list-items a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.header .social-link{
+    display: inline-block;
+}
+
+.header .social-link .singup{
+    padding: 10px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    background-color: aqua;
+    color: black;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Welcome section code */
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content .welcome{
+    background-image: images\pic-2.jpg;
+}
+
+
