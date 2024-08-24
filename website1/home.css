@@ -10,7 +10,7 @@
     position: sticky;
     top: 0;
     background-color: black;
-    height: 6vh;
+    height: 9vh;
     width: auto;
     display: flex;
     align-items: center;
@@ -32,6 +32,7 @@
 
 .header-nav-bar .nav-bar-container .nav-bar .nav-bar-list .links{
     text-decoration: none;
+    font-size: 1.3rem;
     color: white;
     padding: 20px;
 }
