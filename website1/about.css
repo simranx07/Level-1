@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*----header block code-----*/
+
+.header-nav-bar {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    height: 9vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.header-nav-bar .logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.header-nav-bar .nav-bar-container .nav-bar .nav-bar-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header-nav-bar .nav-bar-container .nav-bar .nav-bar-list .links {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: white;
+    padding: 20px;
+}
+
+
+/*-------main section--------*/
+
+.about-container .bg-image {
+    width: 100vw;
+    height: 50vh;
+    background-image: url(images/imageProxy\ \(6\).webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-container .about-neptune-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 4% 16%;
+}
+
+.about-container .about-neptune-container h1 {
+    font-size: 3rem;
+    padding: 20px 0;
+}
+
+.about-container .about-neptune-container p {
+    text-align: justify;
+    padding: 20px 0;
+    font-size: 1.2rem;
+opacity: 0.8;
+}
+
+.about-container .about-neptune-container .btns button {
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid green;
+    margin: 0 20px;
+}
+
+.about-container .about-neptune-container .btns .shop-now{
+    background-color: green;
+    color: white;
+}
+
+.about-container .about-neptune-container .btns .contact-us{
+    background-color: white;
+    color: green;
+}
+
+.about-container .about-neptune-container .btns .shop-now:hover{
+    opacity: 0.7;
+}
+
+.about-container .about-neptune-container .btns .contact-us:hover{
+    background-color: green;
+    color: white;
+}
+/*------Footer section---------*/
+
+.footer {
+    background-color: black;
+    color: white;
+    height: 70vh;
+}
+
+.footer .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo img,
+p {
+    margin: 0 4%;
+}
+
+.logo,
+address,
+.footer-social-links,
+.copyright {
+    margin: 2% 0;
+    padding: 20px;
+}
