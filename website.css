@@ -124,7 +124,8 @@ i:hover {
     position: absolute;
     top: 0;
     z-index: -1;
-    opacity: 0.7;
+    object-fit: cover;
+    opacity: 0.5;
 }
 
 
@@ -273,6 +274,8 @@ i:hover {
     width: 100%;
     background-position: center;
     background-size: cover;
+    object-fit: cover;
+
 }
 
 .pricing .pricing-card-cantainer .pricing-card .plan-name {
