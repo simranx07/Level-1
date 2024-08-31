@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: blueviolet;
+        }
+
+
+        .login-container {
+            width: 400px;
+            height: 500px;
+            margin: auto;
+            margin-top: 10%;
+            text-align: center;
+            background: rgb(253, 251, 251);
+            border-radius: 20px;
+        }
+
+        .login-heading {
+            font-size: 2.5rem;
+            margin: 10px 0px 20px;
+            padding: 20px;
+        }
+
+        .input {
+            display: flex;
+            flex-direction: column;
+            margin: 30px 40px;
+        }
+
+        input {
+            padding: 15px 0;
+            background: transparent;
+            outline: none;
+            border: none;
+            border-bottom: 2px solid rgb(92, 90, 90);
+            font-size: 1rem;
+        }
+
+        ::placeholder {
+            color: rgb(92, 90, 90);
+        }
+
+
+
+        .login-button,
+        .forget,
+        .signup {
+            margin: 20px 40px;
+        }
+
+        button {
+            width: 100%;
+            padding: 8px;
+            font-size: 1.5rem;
+            background: linear-gradient(90deg, rgb(95, 95, 243), rgb(238, 112, 238));
+            color: white;
+            font-weight: bold;
+            border: none;
+            margin-bottom: 30px;
+        }
+
+        button:hover{
+            opacity: 0.5;
+        }
+
+        .forget,
+        .signup {
+            text-align: left;
+            padding: 0 10px;
+            font-size: 1.1rem;
+        }
+
+        a{
+            text-decoration
+            : none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-container">
+        <div class="login-heading">Login</div>
+        <div class="inputs">
+            <div class="input">
+                <input type="text" name="email" id="email" class="email" placeholder="Email">
+            </div>
+            <div class="input">
+                <input type="text" name="password" id="password" class="password" placeholder="Password">
+            </div>
+            <div class="login-button"><button class="login">Login</button></div>
+            <div class="forget">Forget <span class="forget-password"><a href="#" class="link">Password?</a></span></div>
+            <div class="signup">Don't have an account? <span class="sign-up"><a href="#" class="link">Sign Up</a></span></div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
