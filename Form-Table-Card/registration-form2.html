@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: lightblue;
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            width: 80vw;
+            max-width: 900px;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .left,
+        .right {
+            width: 50%;
+            padding: 20px;
+        }
+
+        .left{
+            background: white;
+        }
+
+        .right{
+            background: rgb(89, 89, 229);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .inputs {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        .inputs input,
+        .inputs select {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            background: transparent;
+            
+        }
+        
+        ::placeholder{
+            color: black;
+            font-weight: normal;
+
+        }
+
+        .input-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        .input-group .inputs {
+            flex: 1;
+        }
+
+        button {
+            background-color: #1b1bb4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #14149b;
+        }
+
+        .checkbox{
+            padding: 20px 0;
+        }
+
+        label {
+            font-size: 0.9rem;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="left">
+            <h2>General Information</h2>
+            <form action="">
+                <div class="inputs">
+                    <select name="title" id="title" required>
+                        <option value="" disabled selected>Select Title</option>
+                        <option value="manager">Manager</option>
+                        <option value="hr">HR</option>
+                        <option value="team-leader">Team Leader</option>
+                        <option value="employee">Employee</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <div class="inputs">
+                        <input type="text" name="fname" id="fname" placeholder="First Name" required>
+                    </div>
+                    <div class="inputs">
+                        <input type="text" name="lname" id="lname" placeholder="Last Name" required>
+                    </div>
+                </div>
+                <div class="inputs">
+                    <select  name="position" id="position" required>
+                        <option value="" disabled selected>Select Position</option>
+                        <option value="junior">Junior</option>
+                        <option value="senior">Senior</option>
+                        <option value="intern">Other</option>
+                        <option value="new-joining">New Joining</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <div class="inputs">
+                        <input type="text" name="business_arena" id="business_arena" placeholder="Business Sector">
+                    </div>
+                    <div class="inputs">
+                        <select name="employees" id="employees" required>
+                            <option value="" disabled selected>Select Role</option>
+                            <option value="employees">Employees</option>
+                            <option value="employers">Employers</option>
+                            <option value="managers">Managers</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="right">
+            <h2>Contact Details</h2>
+            <form action="">
+                <div class="inputs">
+                    <input type="text" name="street" id="street" placeholder="Street + Nr" required>
+                </div>
+                <div class="inputs">
+                    <input type="text" name="info" id="info" placeholder="Additional Information">
+                </div>
+                <div class="input-group">
+                    <div class="inputs">
+                        <input type="text" name="zip-code" id="zip-code" placeholder="Zip Code" required>
+                    </div>
+                    <div class="inputs">
+                        <select name="place" id="place" required>
+                            <option value="" disabled selected>Select Place</option>
+                            <option value="mumbai">Mumbai</option>
+                            <option value="chennai">Chennai</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="inputs">
+                    <select name="country" id="country" required>
+                        <option value="" disabled selected>Select Country</option>
+                        <option value="india">India</option>
+                        <option value="canada">Canada</option>
+                        <option value="japan">Japan</option>
+                        <option value="australia">Australia</option>
+                    </select>
+                </div>
+                <div class="inputs">
+                    <input type="number" name="number" id="number" placeholder="Phone Number" required>
+                </div>
+                <div class="inputs">
+                    <input type="email" name="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="terms" id="terms" required>
+                    <label for="terms">I accept the <a href="#">Terms and conditions</a></label>
+                </div>
+                <div class="inputs">
+                    <button type="submit">Register Badge</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
